@@ -1,5 +1,10 @@
-stage('build') {
-    steps {
-        sh 'python sum.py'
+pipeline {
+    agent { docker { image 'python:3.5.1' } }
+    stages {
+        stage('build') {
+            steps {
+                sh 'python sum.py'
+            }
+        }
     }
 }
