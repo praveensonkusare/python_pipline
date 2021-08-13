@@ -1,5 +1,5 @@
 stage('build') {
     steps {
-        sh 'python Sum.py'
+        sh 'python sum.py'
     }
 }
